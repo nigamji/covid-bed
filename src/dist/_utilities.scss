@@ -1,0 +1,51 @@
+
+$spacevalues: (1,2,3,4,5);
+@each $space in $spacevalues {
+    my-#{$space}{
+        margin: ($space+rem) 0;
+    }
+    m-#{$space}{
+        margin: ($space+rem);
+    }
+    py-#{$space}{
+        padding: ($space+rem) 0;
+    }
+    p-#{$space}{
+        padding: ($space+rem) ;
+    }
+}
+.bg{
+    &-dark{
+      background-color: $dark-color;
+    }
+    &-success{
+        background-color: $success-color;
+    }
+    &-danger{
+        background-color: $danger-color;
+    }
+  }
+.btn{
+    cursor: pointer;
+    padding: 0.6rem 0.25rem;
+    box-sizing: border-box;
+    border-radius: 5px;
+    color: $light-color;
+    border: 1px solid $dark-color;
+    text-align: center;
+    &-success{
+        background-color: $success-color;
+    }
+    &-success:hover{
+        background-color: lighten($success-color, 30%);
+        color: #000;
+    }
+    &-danger{
+        background-color: $danger-color;
+    }
+    &-danger:hover{
+        background-color: lighten($danger-color, 30%);
+        color: #000;
+    }
+
+}

@@ -1,0 +1,14 @@
+$primary-color: #17a2b8;
+$dark-color: #343a40;
+$danger-color: red;
+$success-color: green;
+$light-color: #f4f4f4;
+
+@mixin bgCounter($color) {
+    background-color: lighten($color,20%);
+}
+
+@mixin flexEven(){
+    display: flex;
+    justify-content: space-evenly;
+}

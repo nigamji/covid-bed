@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb+srv://aryan:aryan123@covidbed.9qxlq.mongodb.net/CovidDetails?retryWrites=true&w=majority",
+    "jwtSecret": "mySecret"
+}

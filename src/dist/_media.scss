@@ -1,0 +1,58 @@
+@media(max-width:700px) {
+    .counter{
+        flex-direction: column;
+        justify-content: space-around;
+        // overflow: scroll;
+        height: 65vh;
+        width: 100%;
+        align-items: center;
+        &-box{
+            margin: auto 0;
+            padding: 0;
+            font-size: medium;
+            width: 15rem;
+            h1,h3{
+                margin: 0;
+                padding: 0%;
+            }
+        }
+    }
+    .bedCard{
+        label{
+            font-size: smaller;
+        }
+        &-header{
+            font-size: small;
+            align-items: center;
+        }
+        width:80%;
+    }
+    .bedCardsStyle{
+        margin: 0;
+    }
+    .min-none{
+        display: none;
+    }
+    .button{
+        width: 60%;
+    }
+    .Footer{
+        text-align: center;
+    }
+}
+
+@media(min-width:700px)and (max-width:1025px){
+    .counter{
+        height: 40vh;
+    }
+    &-box{
+        margin: auto 0;
+        padding: 0;
+        font-size: medium;
+        width: 15rem;
+        h1,h3{
+            margin: 0;
+            padding: 0%;
+        }
+    }
+} 
